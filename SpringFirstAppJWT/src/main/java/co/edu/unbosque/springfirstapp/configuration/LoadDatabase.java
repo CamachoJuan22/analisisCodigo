@@ -46,7 +46,7 @@ public class LoadDatabase {
         log.info("El usuario normal ya existe, omitiendo la creación del usuario normal...");
       } else {
         User normalUser =
-            new User("normaluser", passwordEncoder.encode("1234567890"), User.Role.USER);
+            new User("normaluser", passwordEncoder.encode("1234567890"), User.Role.US);
         userRepo.save(normalUser);
         log.info("Precargando usuario normal");
       }
